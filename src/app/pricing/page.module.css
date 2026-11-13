@@ -1,0 +1,119 @@
+/* Общие элементы */
+.tag { align-self: flex-start; padding: 7px 14px; border-radius: 999px; background: var(--coral-t); font-size: 14px; font-weight: 600; line-height: 1.5; }
+.h1 { font-weight: 600; letter-spacing: -0.04em; line-height: 1; font-size: 76px; }
+.h2 { font-weight: 600; letter-spacing: -0.03em; line-height: 1.04; font-size: 52px; }
+.lead { line-height: 1.5; color: var(--ink-2); max-width: 640px; font-size: 19px; }
+.btn { align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; height: 60px; padding: 0 30px; border-radius: 16px; background: var(--coral); color: var(--ink); font-size: 18px; font-weight: 600; text-decoration: none; transition: background .15s; }
+.btn:hover { background: #ff9274; }
+.head { display: flex; flex-direction: column; gap: 12px; }
+.g4 { display: grid; gap: 16px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.g2 { display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* Первый экран */
+.hero { display: flex; flex-wrap: wrap; align-items: center; gap: 64px; padding-top: 80px; padding-bottom: 100px; }
+.heroText { display: flex; flex-direction: column; gap: 22px; flex: 1 1 520px; min-width: 0; }
+.heroCard { flex: 0 0 440px; background: var(--coral); border-radius: 36px; padding: 44px; display: flex; flex-direction: column; gap: 4px; }
+.heroMono { font-family: var(--mono); font-size: 13px; color: var(--ink); }
+.big { font-weight: 600; letter-spacing: -0.06em; line-height: 0.95; font-size: 180px; }
+.heroCardSub { font-size: 18px; font-weight: 600; }
+.sellers { display: flex; align-items: center; gap: 12px; margin-top: 12px; background: #fff; border-radius: 16px; padding: 12px 14px; font-size: 14px; line-height: 1.3; }
+.avatars { display: flex; flex: none; }
+.avatars img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; object-position: center 25%; border: 2px solid #fff; }
+.avatars img + img { margin-left: -10px; }
+
+/* Ступенчатая комиссия */
+.gray { background: var(--soft); padding: 100px 0; }
+.stack { display: flex; flex-direction: column; gap: 36px; }
+.note { display: flex; align-items: center; gap: 14px; padding: 18px 22px; border-radius: 18px; background: var(--coral-t); font-size: 16px; font-weight: 600; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--coral); flex-shrink: 0; }
+.tierCard { background: #fff; border-radius: 22px; padding: 24px; display: flex; flex-direction: column; gap: 6px; }
+.tierRange { font-size: 14px; color: var(--ink-2); }
+.tier { font-weight: 600; letter-spacing: -0.04em; line-height: 1; font-size: 64px; }
+.info { display: flex; flex-direction: column; gap: 10px; }
+.info b { font-size: 18px; }
+.info span { font-size: 16px; line-height: 1.55; color: var(--ink-2); }
+
+/* Калькулятор */
+.sec { padding-top: 100px; padding-bottom: 100px; }
+.calcWrap { display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start; }
+.calcIntro { display: flex; flex-direction: column; gap: 14px; flex: 1 1 360px; min-width: 0; }
+.calc { flex: 1 1 560px; min-width: 0; background: #fff; border-radius: 32px; padding: 40px; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 20px 50px rgba(11, 18, 51, 0.08); }
+.seg { display: flex; background: var(--soft); border-radius: 14px; padding: 4px; }
+.segBtn { flex: 1 1 0; min-height: 46px; border: 0; border-radius: 11px; font-size: 15px; font-weight: 600; cursor: pointer; background: transparent; color: var(--ink-2); padding: 0 6px; }
+.segOn { background: #fff; color: var(--ink); box-shadow: 0 2px 8px rgba(11, 18, 51, 0.1); }
+.short { display: none; }
+.calcLabel { font-size: 15px; color: var(--ink-2); }
+.calcNum { font-weight: 600; letter-spacing: -0.02em; margin-top: -10px; font-size: 44px; line-height: 1.2; }
+.range { width: 100%; height: 28px; margin: 0; }
+.results3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; border-top: 1px solid var(--line); padding-top: 18px; }
+.result { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.result span { font-size: 13px; color: var(--ink-2); }
+.result b { font-size: 28px; line-height: 1.2; }
+.calcNote { font-size: 13px; color: var(--ink-3); }
+
+/* Тарифы бота */
+.blue { background: var(--sky-t); display: flex; flex-direction: column; gap: 36px; max-width: 1360px; margin: 0 40px; border-radius: 40px; padding: 90px 40px; }
+@media (min-width: 1440px) { .blue { margin: 0 auto; } }
+.plan { background: #fff; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.planPro { box-shadow: inset 0 0 0 2px var(--coral); }
+.planName { font-family: var(--mono); font-size: 13px; color: var(--ink-3); }
+.planDesc { font-size: 16px; color: var(--ink-2); }
+.priceRow { display: flex; align-items: baseline; gap: 10px; }
+.priceRow span { font-size: 15px; color: var(--ink-2); }
+.priceWrap { flex-wrap: wrap; }
+.price { font-weight: 600; letter-spacing: -0.03em; font-size: 48px; line-height: 1.2; }
+.termSpacer { height: 52px; }
+.terms { display: flex; background: var(--soft); border-radius: 12px; padding: 4px; }
+.termBtn { flex: 1 1 0; min-height: 44px; border: 0; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; background: transparent; color: var(--ink-2); padding: 0 4px; }
+.features { list-style: none; margin: 0; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line); padding: 18px 0 0; font-size: 16px; }
+.planBtn, .planBtnGhost { margin-top: auto; display: flex; align-items: center; justify-content: center; height: 54px; border-radius: 14px; font-size: 16px; font-weight: 600; text-decoration: none; color: var(--ink); transition: background .15s; }
+.planBtn { background: var(--coral); }
+.planBtn:hover { background: #ff9274; }
+.planBtnGhost { border: 1.5px solid var(--ink); }
+.planBtnGhost:hover { background: var(--soft); }
+
+/* Вопросы об оплате */
+.faqWrap { display: flex; flex-wrap: wrap; gap: 64px; }
+.faqList { flex: 1 1 560px; min-width: 0; }
+
+@media (max-width: 1023px) {
+  .g4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .heroCard { flex: 1 1 100%; }
+}
+
+@media (max-width: 767px) {
+  .h1 { font-size: 40px; }
+  .h2 { font-size: 30px; }
+  .lead { font-size: 16px; }
+  .btn { align-self: stretch; }
+  .g4 { gap: 10px; }
+  .g2 { gap: 16px; grid-template-columns: minmax(0, 1fr); }
+
+  .hero { gap: 32px; padding-top: 32px; padding-bottom: 48px; }
+  .heroCard { padding: 28px; }
+  .big { font-size: 120px; }
+
+  .gray { padding: 48px 0; }
+  .stack { gap: 24px; }
+  .tier { font-size: 40px; }
+
+  .sec { padding-top: 48px; padding-bottom: 48px; }
+  .calcWrap { gap: 24px; }
+  .calc { border-radius: 24px; padding: 20px; }
+  .segBtn { font-size: 13px; }
+  .long { display: none; }
+  .short { display: inline; }
+  .calcNum { font-size: 32px; }
+  .result b { font-size: 17px; }
+
+  .blue { gap: 24px; margin: 0 12px; border-radius: 28px; padding: 40px 16px; }
+  .price { font-size: 36px; }
+
+  .faqWrap { gap: 20px; }
+}
+
+@media (max-width: 374px) {
+  .plan { padding: 22px; }
+  .termBtn { font-size: 13px; }
+  .result b { font-size: 15px; }
+}

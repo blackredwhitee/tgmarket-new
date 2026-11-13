@@ -1,0 +1,161 @@
+import type { StaticImageData } from "next/image";
+import { NICHES, type NicheSlug } from "@/lib/links";
+
+import session from "@/assets/photos/pexels-23496443.jpg";
+import career from "@/assets/photos/pexels-7176292.jpg";
+import budget from "@/assets/photos/pexels-5900092.jpg";
+import speaker from "@/assets/photos/pexels-1708912.jpg";
+import hall from "@/assets/photos/pexels-1708936.jpg";
+import candleW from "@/assets/photos/pexels-7233970.jpg";
+import ring from "@/assets/photos/pexels-7514831.jpg";
+import blog from "@/assets/photos/pexels-12432696.jpg";
+import edit from "@/assets/photos/pexels-31718971.jpg";
+import group from "@/assets/photos/pexels-7176286.jpg";
+import note from "@/assets/photos/pexels-19905182.jpg";
+import psyPhoto from "@/assets/photos/pexels-23496568.jpg";
+import aPsy from "@/assets/photos/ava_psy.jpg";
+import aBlog from "@/assets/photos/ava_blog.jpg";
+import aCareer from "@/assets/photos/ava_career.jpg";
+
+export type NicheCard = { t: string; p: string; img: StaticImageData };
+
+export type Niche = {
+  label: string;
+  h1: string;
+  sub: string;
+  pains: string[];
+  /** Подпись над названием в карточках «Что можно продавать». */
+  kind: string;
+  cards: NicheCard[];
+  /** Заголовок финального CTA (Footer title). */
+  fin: string;
+  photo: StaticImageData;
+  channel: string;
+  ava: StaticImageData;
+  /** Текст кнопки в карточке поста. */
+  btn: string;
+  /** Для списка на /solutions: подпись типа и фон плашки. */
+  listKind: string;
+  listBg: string;
+  /** SEO */
+  metaTitle: string;
+  metaDescription: string;
+};
+
+/** Данные страниц ниш (объект D макета Niche.dc.html), ключ — slug роута. */
+export const NICHE_DATA: Record<NicheSlug, Niche> = {
+  psychologists: {
+    label: "Психологам и коучам",
+    h1: "Консультации психолога с оплатой прямо в Telegram",
+    sub: "Продавайте сессии и пакеты подписчикам канала. Клиент оплачивает по СБП, а вы не сверяете переводы вручную.",
+    pains: ["Клиенты пишут в личку, чтобы узнать, как оплатить", "Приходится вручную сверять переводы перед каждой сессией", "Неловко напоминать об оплате"],
+    kind: "УСЛУГА",
+    cards: [
+      { t: "Сессия 50 мин", p: "4 500 ₽", img: session },
+      { t: "Пакет из 4 встреч", p: "16 000 ₽", img: psyPhoto },
+      { t: "Групповая терапия", p: "2 000 ₽", img: group },
+    ],
+    fin: "Откройте запись на сессии в своём канале",
+    photo: psyPhoto,
+    channel: "Спокойная голова",
+    ava: aPsy,
+    btn: "Оплатить",
+    listKind: "УСЛУГИ",
+    listBg: "#FFF1EC",
+    metaTitle: "Оплата консультаций психолога в Telegram — TG Market",
+    metaDescription: "Продавайте сессии и пакеты подписчикам канала. Клиент оплачивает по СБП, а вы не сверяете переводы вручную.",
+  },
+  experts: {
+    label: "Экспертам и наставникам",
+    h1: "Консультации и менторство — продавайте там, где вас читают",
+    sub: "Разборы резюме, карьерные консультации, менторство — оформите услугу за несколько минут и опубликуйте в канале.",
+    pains: ["Заявки на разбор приходят в личку, и их легко потерять", "Нет времени собирать сайт с оплатой под каждую услугу", "Оплату приходится подтверждать вручную"],
+    kind: "УСЛУГА",
+    cards: [
+      { t: "Разбор резюме", p: "3 000 ₽", img: career },
+      { t: "Карьерная консультация", p: "5 000 ₽", img: budget },
+      { t: "Месяц менторства", p: "20 000 ₽", img: session },
+    ],
+    fin: "Продавайте консультации в своём канале",
+    photo: career,
+    channel: "Карьера без паники",
+    ava: aCareer,
+    btn: "Оплатить",
+    listKind: "УСЛУГИ",
+    listBg: "#EAF7FF",
+    metaTitle: "Продажа консультаций и менторства в Telegram — TG Market",
+    metaDescription: "Разборы резюме, карьерные консультации, менторство — оформите услугу за несколько минут и опубликуйте в канале. Оплата по СБП.",
+  },
+  infoproducts: {
+    label: "Авторам инфопродуктов",
+    h1: "Гайды и курсы — продажи прямо из поста",
+    sub: "Публикуйте карточку гайда или курса в канале — подписчик оплачивает по СБП, не уходя на внешний сайт.",
+    pains: ["Подписчики теряются по дороге на внешний лендинг", "Файлы приходится рассылать вручную", "Платёжная страница стоит отдельных денег"],
+    kind: "ТОВАР",
+    cards: [
+      { t: "Гайд", p: "990 ₽", img: note },
+      { t: "Чек-лист", p: "490 ₽", img: budget },
+      { t: "Мини-курс", p: "3 900 ₽", img: edit },
+    ],
+    fin: "Продавайте гайды прямо из поста",
+    photo: ring,
+    channel: "Таблицы и бюджет",
+    ava: aBlog,
+    btn: "Оплатить",
+    listKind: "ЦИФРОВЫЕ ТОВАРЫ",
+    listBg: "#F4F6FA",
+    metaTitle: "Продажа гайдов и курсов в Telegram — TG Market",
+    metaDescription: "Публикуйте карточку гайда или курса в канале — подписчик оплачивает по СБП, не уходя на внешний сайт.",
+  },
+  events: {
+    label: "Организаторам мероприятий",
+    h1: "Продавайте билеты на мероприятия в своём канале",
+    sub: "Вебинары, мастер-классы и офлайн-встречи: билеты с оплатой по СБП прямо в посте.",
+    pains: ["Список оплативших ведётся в таблице вручную", "Сложно понять, сколько мест осталось", "Переводы приходят без имени и назначения"],
+    kind: "БИЛЕТ",
+    cards: [
+      { t: "Билет на вебинар", p: "990 ₽", img: ring },
+      { t: "Мастер-класс", p: "2 500 ₽", img: candleW },
+      { t: "Встреча-нетворкинг", p: "1 500 ₽", img: hall },
+    ],
+    fin: "Продавайте билеты в своём канале",
+    photo: speaker,
+    channel: "Лекторий по выходным",
+    ava: speaker,
+    btn: "Купить билет",
+    listKind: "БИЛЕТЫ",
+    listBg: "#FFF1EC",
+    metaTitle: "Продажа билетов на мероприятия в Telegram — TG Market",
+    metaDescription: "Вебинары, мастер-классы и офлайн-встречи: билеты с оплатой по СБП прямо в посте вашего канала.",
+  },
+  donations: {
+    label: "Авторам и блогерам (донаты)",
+    h1: "Поддержка от подписчиков — донаты в вашем канале",
+    sub: "Добавьте карточку доната в канал: читатели поддерживают вас в пару нажатий.",
+    pains: ["Номер карты в описании канала выглядит несерьёзно", "Читатели хотят поддержать, но не знают как", "Внешние сервисы уводят аудиторию из Telegram"],
+    kind: "ДОНАТ",
+    cards: [
+      { t: "Поддержать автора", p: "100 · 500 · 1 000 ₽", img: blog },
+      { t: "Донат на проект", p: "любая сумма", img: edit },
+    ],
+    fin: "Принимайте поддержку в своём канале",
+    photo: blog,
+    channel: "Кадр за кадром",
+    ava: aBlog,
+    btn: "Поддержать",
+    listKind: "ДОНАТЫ",
+    listBg: "#EAF7FF",
+    metaTitle: "Донаты в Telegram-канале по СБП — TG Market",
+    metaDescription: "Добавьте карточку доната в канал: читатели поддерживают вас в пару нажатий, оплата по СБП.",
+  },
+};
+
+/** Ниши в порядке меню. */
+export const NICHE_LIST = NICHES.map((n) => ({ slug: n.slug, ...NICHE_DATA[n.slug] }));
+
+/** Вопросы на странице ниши (одинаковые для всех ниш). */
+export const NICHE_FAQ = [
+  { q: "Кто может продавать?", a: "Самозанятые, ИП и юридические лица." },
+  { q: "Как покупатель оплачивает?", a: "По СБП, через приложение своего банка." },
+  { q: "Как покупатель получает услугу или доступ?", a: "Сразу после оплаты: цифровой товар или доступ — ссылкой, билет — QR-кодом. Вы видите каждую продажу в боте." },
+];

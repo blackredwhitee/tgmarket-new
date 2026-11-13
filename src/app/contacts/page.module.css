@@ -1,0 +1,47 @@
+.hero { padding-top: 80px; }
+.heroBox { display: flex; flex-direction: column; gap: 22px; max-width: 840px; }
+.tag { align-self: flex-start; padding: 7px 14px; border-radius: 999px; background: var(--coral-t); font-size: 14px; font-weight: 600; }
+.h1 { font-weight: 600; letter-spacing: -0.04em; line-height: 1; font-size: 72px; }
+.lead { line-height: 1.5; color: var(--ink-2); max-width: 680px; font-size: 19px; }
+
+.sec { display: flex; flex-direction: column; gap: 40px; padding-top: 100px; padding-bottom: 100px; }
+.grid { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.card { border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 14px; min-height: 300px; }
+.coral { background: var(--coral-t); }
+.blue { background: var(--sky-t); }
+.gray { background: var(--soft); }
+.h3 { font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; font-size: 24px; }
+.body { font-size: 16px; line-height: 1.55; color: var(--ink-2); }
+.cardActions { display: flex; flex-direction: column; gap: 10px; margin-top: auto; }
+.btnDark { display: flex; align-items: center; justify-content: center; height: 52px; border-radius: 14px; background: var(--ink); color: #fff; font-size: 16px; font-weight: 600; text-decoration: none; transition: background .15s; }
+.btnDark:hover { background: #1c2550; color: #fff; }
+.faqLink { text-align: center; font-size: 15px; font-weight: 600; }
+.cardLink { margin-top: auto; font-size: 16px; font-weight: 600; }
+
+.secGray { background: var(--soft); }
+.secGrayIn { display: flex; flex-direction: column; gap: 40px; padding-top: 100px; padding-bottom: 100px; }
+.h2 { font-weight: 600; letter-spacing: -0.03em; line-height: 1.04; font-size: 52px; }
+.req { display: flex; flex-direction: column; border-top: 1.5px solid var(--ink); margin: 0; }
+.row { display: grid; gap: 24px; grid-template-columns: 280px minmax(0, 1fr); padding: 18px 0; border-bottom: 1px solid #dde1ea; }
+.row dt { font-size: 15px; color: var(--ink-3); }
+.row dd { margin: 0; font-size: 17px; font-weight: 500; overflow-wrap: anywhere; }
+.docs { display: flex; flex-wrap: wrap; gap: 10px 28px; font-size: 16px; font-weight: 600; }
+.spacer { height: 60px; }
+
+@media (max-width: 1023px) {
+  .grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .card { min-height: 0; }
+}
+@media (max-width: 767px) {
+  .hero { padding-top: 32px; }
+  .h1 { font-size: 40px; }
+  .lead { font-size: 16px; }
+  .sec { gap: 24px; padding-top: 48px; padding-bottom: 48px; }
+  .grid { gap: 12px; }
+  .card { border-radius: 22px; padding: 22px; }
+  .h3 { font-size: 20px; }
+  .body { font-size: 15px; }
+  .secGrayIn { gap: 24px; padding-top: 48px; padding-bottom: 48px; }
+  .h2 { font-size: 30px; }
+  .row { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+}

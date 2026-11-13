@@ -1,0 +1,11 @@
+.box { position: fixed; left: 20px; bottom: 20px; z-index: 60; width: min(380px, calc(100% - 24px)); background: var(--ink); color: #fff; border-radius: 20px; padding: 18px 20px; display: flex; flex-direction: column; gap: 14px; font-size: 14.5px; line-height: 1.45; box-shadow: 0 20px 50px rgba(11,18,51,.3); }
+.box a { color: var(--sky); }
+.row { display: flex; gap: 8px; }
+.accept, .ghost { flex: 1; height: 44px; border-radius: 12px; border: 0; font-size: 15px; font-weight: 600; cursor: pointer; }
+.accept { background: var(--coral); color: var(--ink); }
+.ghost { background: rgba(255,255,255,.1); color: #fff; }
+.opt { display: flex; align-items: center; gap: 10px; }
+.opt input { width: 18px; height: 18px; accent-color: var(--coral); }
+@media (max-width: 767px) {
+  .box { left: 12px; bottom: 96px; }
+}

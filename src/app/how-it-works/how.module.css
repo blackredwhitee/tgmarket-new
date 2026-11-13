@@ -1,0 +1,90 @@
+@keyframes hin { 0% { opacity: 0; transform: translateY(14px); } 100% { opacity: 1; transform: none; } }
+
+/* ── Общие элементы страницы ── */
+.inner { max-width: 1440px; margin: 0 auto; padding: 100px var(--pad); display: flex; flex-direction: column; gap: 40px; }
+.gray { background: var(--soft); }
+.tag { align-self: flex-start; padding: 7px 14px; border-radius: 999px; background: var(--coral-t); font-size: 14px; font-weight: 600; line-height: 1.5; }
+.h1 { font-weight: 600; letter-spacing: -0.04em; line-height: 1; font-size: 72px; }
+.h2 { font-weight: 600; letter-spacing: -0.03em; line-height: 1.04; font-size: 52px; }
+.h3 { font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; font-size: 24px; }
+.lead { line-height: 1.5; color: var(--ink-2); max-width: 680px; font-size: 19px; }
+.body { font-size: 16px; line-height: 1.55; color: var(--ink-2); }
+.btn { align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; height: 60px; padding: 0 30px; border-radius: 16px; background: var(--coral); color: var(--ink); font-size: 18px; font-weight: 600; text-decoration: none; transition: background .15s; }
+.btn:hover { background: #ff9274; }
+.g3 { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.card, .cardGray { background: #fff; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 12px; }
+.cardGray { background: var(--soft); }
+.num { font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: var(--coral); font-size: 56px; }
+.headGroup { display: flex; flex-direction: column; gap: 12px; }
+
+/* ── Hero ── */
+.hero { max-width: 1440px; margin: 0 auto; padding: 80px var(--pad) 90px; }
+.heroBox { max-width: 840px; display: flex; flex-direction: column; gap: 22px; }
+
+/* ── Шаги + телефон ── */
+.split { display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start; }
+.steps { display: flex; flex-direction: column; gap: 8px; flex: 1 1 520px; min-width: 0; }
+.step { display: flex; gap: 16px; align-items: flex-start; width: 100%; padding: 20px 24px; border-radius: 20px; border: 0; color: var(--ink); cursor: pointer; background: transparent; transition: background .25s; text-align: left; }
+.stepOn { background: #fff; box-shadow: 0 14px 30px rgba(11, 18, 51, 0.08); }
+.stepNum { flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 16px; background: #fff; border: 1.5px solid #d5dae5; }
+.stepOn .stepNum { background: var(--coral); border: 0; }
+.stepText { display: flex; flex-direction: column; gap: 6px; text-align: left; }
+.stepTitle { font-size: 19px; line-height: 1.25; font-weight: 700; }
+.stepDesc { font-size: 15px; line-height: 1.5; color: var(--ink-2); font-weight: 400; animation: hin .3s both; }
+
+.phone { flex: 0 0 auto; margin: 0 auto; width: 320px; height: 600px; border-radius: 46px; background: var(--ink); padding: 10px; }
+.screen { width: 100%; height: 100%; border-radius: 37px; background: #e7eef3; overflow: hidden; display: flex; flex-direction: column; }
+.botHead { background: #fff; padding: 34px 16px 12px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--line); }
+.botHead img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.botName { display: flex; flex-direction: column; line-height: 1.5; }
+.botName b { font-size: 14px; }
+.botName span { font-size: 12px; color: var(--ink-3); }
+.chat { flex-grow: 1; padding: 14px; display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; }
+.msgGroup { display: flex; flex-direction: column; gap: 8px; animation: hin .35s both; }
+.bubble { align-self: flex-start; max-width: 85%; background: #fff; border-radius: 16px 16px 16px 4px; padding: 12px 14px; font-size: 14px; line-height: 1.45; }
+.botBtn { display: block; text-align: center; padding: 11px 12px; border-radius: 12px; font-size: 14px; font-weight: 600; line-height: 1.5; color: #2a7fb8; background: rgba(255, 255, 255, 0.7); }
+.botBtnMain { background: #fff; }
+
+/* ── Что видит покупатель ── */
+.mock { height: 210px; border-radius: 18px; background: #cfe3ef; padding: 14px; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; font-size: 13px; line-height: 1.5; }
+.post { width: 100%; background: #fff; border-radius: 14px; overflow: hidden; }
+.post img { width: 100%; height: 90px; object-fit: cover; display: block; }
+.postText { padding: 8px 10px; }
+.payLink { border-top: 1px solid var(--line); padding: 8px; text-align: center; font-weight: 600; color: #2a7fb8; }
+.payHead { background: #fff; border-radius: 12px; padding: 10px 12px; display: flex; justify-content: space-between; }
+.bank { background: #fff; border-radius: 10px; padding: 10px 12px; }
+.done { background: #fff; border-radius: 12px; padding: 12px; display: flex; gap: 12px; align-items: center; }
+.ticketQr { width: 74px; height: 74px; flex: none; border-radius: 8px; background-color: #fff; background-image: linear-gradient(90deg, var(--ink) 50%, transparent 50%), linear-gradient(var(--ink) 50%, transparent 50%); background-size: 12px 12px; opacity: .85; }
+.doneText { display: flex; flex-direction: column; gap: 4px; }
+.muted { color: var(--ink-3); }
+
+/* ── Деньги и документы ── */
+.blueWrap { max-width: 1440px; margin: 0 auto; padding: 0 40px; }
+.blue { background: var(--sky-t); border-radius: 40px; padding: 90px 40px; display: flex; flex-direction: column; gap: 40px; }
+.more { font-size: 16px; font-weight: 600; color: var(--ink); line-height: 1.5; }
+.more:hover { color: var(--coral-d); }
+.spacer { height: 60px; }
+
+@media (max-width: 1023px) {
+  .g3 { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 767px) {
+  .inner { padding: 48px 20px; gap: 24px; }
+  .h1 { font-size: 40px; }
+  .h2 { font-size: 30px; }
+  .h3 { font-size: 20px; }
+  .lead { font-size: 16px; }
+  .body { font-size: 15px; }
+  .btn { align-self: stretch; }
+  .g3 { gap: 12px; }
+  .card, .cardGray { border-radius: 22px; padding: 22px; }
+  .num { font-size: 40px; }
+  .hero { padding: 32px 20px 48px; }
+  .split { gap: 24px; }
+  .steps { flex-basis: 100%; }
+  .step { padding: 16px; }
+  .phone { width: 280px; height: 520px; }
+  .blueWrap { padding: 0 12px; }
+  .blue { border-radius: 28px; padding: 40px 16px; gap: 24px; }
+}
