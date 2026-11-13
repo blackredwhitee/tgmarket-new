@@ -33,7 +33,7 @@ export default function Header() {
         </Link>
         <div className={s.links}>
           <Link href="/how-it-works/">Как это работает</Link>
-          <div className={s.solWrap} ref={solRef}>
+          <div className={s.solWrap} ref={solRef} onMouseEnter={() => setSol(true)} onMouseLeave={() => setSol(false)}>
             <button type="button" className={s.solBtn} aria-expanded={sol} onClick={() => setSol(!sol)}>
               Решения <span aria-hidden="true">▾</span>
             </button>

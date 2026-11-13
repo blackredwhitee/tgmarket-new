@@ -274,9 +274,11 @@
 .partnersText { display: flex; flex-direction: column; gap: 16px; max-width: 760px; }
 .partnersSub { font-size: 19px; line-height: 1.5; }
 .partnersSide { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
-.partnersBadge { color: var(--ink); background: #fff; border-radius: 24px; padding: 22px 28px; display: flex; flex-direction: column; }
-.partnersBadge b { font-size: 52px; letter-spacing: -0.03em; line-height: 1.2; }
-.partnersBadge span { font-size: 15px; color: var(--ink-2); }
+.partnersBadge { color: #fff; display: flex; flex-direction: column; align-items: flex-end; text-align: right; }
+.partnersBadge b { font-size: 72px; letter-spacing: -0.03em; line-height: 1.2; }
+.partnersBadge span { font-size: 16px; color: rgba(255,255,255,.85); }
+.partnersWrap .btnInk { background: #fff; color: var(--ink) !important; }
+.partnersWrap .btnInk:hover { background: var(--ink); color: #fff !important; }
 
 /* ===== FAQ ===== */
 .faq { padding-top: 120px; padding-bottom: 120px; display: grid; grid-template-columns: 420px minmax(0, 1fr); gap: 56px; }
@@ -315,6 +317,7 @@
   .price { grid-template-columns: 1fr; }
   .partners { flex-direction: column; align-items: flex-start; }
   .partnersSide { align-items: flex-start; }
+  .partnersBadge { align-items: flex-start; text-align: left; }
   .faq { grid-template-columns: 1fr; }
 }
 

@@ -89,3 +89,18 @@ input[type=range] { accent-color: var(--coral); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* Анимация наведения для всех кнопок: подъём + тень, нажатие — проседание */
+:is(a, button):is(.btn, .btn-ghost, [class*="_btn"], [class*="Btn__"], [class*="_cta__"], [class*="_mobCta"], [class*="_accept"]):not([class*="solBtn"]) {
+  transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s, background-color .2s, color .2s, border-color .2s;
+}
+@media (hover: hover) {
+  :is(a, button):is(.btn, .btn-ghost, [class*="_btn"], [class*="Btn__"], [class*="_cta__"], [class*="_mobCta"], [class*="_accept"]):not([class*="solBtn"]):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(11, 18, 51, .18);
+  }
+}
+:is(a, button):is(.btn, .btn-ghost, [class*="_btn"], [class*="Btn__"], [class*="_cta__"], [class*="_mobCta"], [class*="_accept"]):not([class*="solBtn"]):active {
+  transform: translateY(0) scale(.98);
+  box-shadow: none;
+}
