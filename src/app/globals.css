@@ -104,3 +104,14 @@ input[type=range] { accent-color: var(--coral); }
   transform: translateY(0) scale(.98);
   box-shadow: none;
 }
+
+/* Ховер для вкладок и переключателей */
+button:is([role="tab"], [aria-pressed]) { cursor: pointer; transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s, background-color .2s, color .2s, border-color .2s; }
+@media (hover: hover) {
+  button:is([role="tab"][aria-selected="false"], [aria-pressed="false"]):hover {
+    transform: translateY(-2px);
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(11, 18, 51, .12);
+  }
+}
+button:is([role="tab"], [aria-pressed]):active { transform: scale(.97); }

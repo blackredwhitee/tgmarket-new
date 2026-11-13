@@ -106,7 +106,7 @@ export default function Home() {
 
       {/* FORMATS */}
       <section id="formats" className={`container ${s.formats}`}>
-        <div className={s.headCol}><span className={s.eyebrow}>ШАГ 1 · СОЗДАЙТЕ ПРЕДЛОЖЕНИЕ</span><h2 className={s.h2}>Продавайте то, что нужно вашей аудитории</h2></div>
+        <div className={s.headCol}><span className={s.eyebrow}>СОЗДАЙТЕ ПРЕДЛОЖЕНИЕ</span><h2 className={s.h2}>Продавайте то, что нужно вашей аудитории</h2></div>
         <Formats />
       </section>
 
