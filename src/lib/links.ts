@@ -12,6 +12,7 @@ export const NICHES = [
   { slug: "infoproducts", key: "info", title: "Авторам инфопродуктов" },
   { slug: "events", key: "ev", title: "Организаторам мероприятий" },
   { slug: "donations", key: "don", title: "Авторам и блогерам (донаты)" },
+  { slug: "offline", key: "off", title: "Офлайн-магазинам и мастерам" },
 ] as const;
 export type NicheSlug = (typeof NICHES)[number]["slug"];
 

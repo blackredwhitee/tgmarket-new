@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Qr from "@/components/Qr";
 import { BOT_URL, NICHES, SUPPORT_URL } from "@/lib/links";
 import { BELT, CASES, NICHE_CARDS, TICKER } from "./_home/data";
+import Features from "./_home/Features";
 import HowSteps from "./_home/HowSteps";
 import Formats from "./_home/Formats";
 import SalePath from "./_home/SalePath";
@@ -117,6 +118,12 @@ export default function Home() {
           <p className={s.pathSub}>Всё, что происходит после публикации, — в одном боте. Выберите шаг, чтобы посмотреть, как это выглядит.</p>
         </div>
         <SalePath />
+      </section>
+
+      {/* FEATURES */}
+      <section id="features" className={`container ${s.features}`}>
+        <div className={s.headCol}><span className={s.eyebrow}>ДОПОЛНИТЕЛЬНО</span><h2 className={s.h2}>Ещё больше возможностей в боте</h2></div>
+        <Features />
       </section>
 
       {/* NICHES */}

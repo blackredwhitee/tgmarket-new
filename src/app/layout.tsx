@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Header from "@/components/Header";
 import CookieBanner from "@/components/CookieBanner";
 import StickyCta from "@/components/StickyCta";
+import ScrollReveal from "@/components/ScrollReveal";
 import { SITE_URL } from "@/lib/links";
 import "./globals.css";
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <CookieBanner />
         <StickyCta />
+        <ScrollReveal />
       </body>
     </html>
   );

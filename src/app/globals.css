@@ -115,3 +115,7 @@ button:is([role="tab"], [aria-pressed]) { cursor: pointer; transition: transform
   }
 }
 button:is([role="tab"], [aria-pressed]):active { transform: scale(.97); }
+
+/* Появление при прокрутке (ScrollReveal) */
+.rv { opacity: 0; translate: 0 28px; transition: opacity .7s cubic-bezier(.2,.8,.2,1) var(--rv-d, 0ms), translate .7s cubic-bezier(.2,.8,.2,1) var(--rv-d, 0ms); }
+.rv.rv-in { opacity: 1; translate: 0 0; }

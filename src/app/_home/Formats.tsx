@@ -43,7 +43,6 @@ export default function Formats() {
               </div>
             ))}
           </div>
-          <span className={s.fmtMore}>Ещё в боте: промокоды, импорт карточек из Excel и витрина продавца со всеми вашими товарами.</span>
         </div>
         <div className={s.phone}>
           <div className={s.phoneScreen}>

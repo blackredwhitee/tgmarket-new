@@ -7,6 +7,9 @@ import budget from "@/assets/photos/pexels-5900092.jpg";
 import speaker from "@/assets/photos/pexels-1708912.jpg";
 import hall from "@/assets/photos/pexels-1708936.jpg";
 import candleW from "@/assets/photos/pexels-7233970.jpg";
+import candle from "@/assets/photos/pexels-6755793.jpg";
+import artist from "@/assets/photos/pexels-22690822.jpg";
+import aArt from "@/assets/photos/ava_art.jpg";
 import ring from "@/assets/photos/pexels-7514831.jpg";
 import blog from "@/assets/photos/pexels-12432696.jpg";
 import edit from "@/assets/photos/pexels-31718971.jpg";
@@ -154,6 +157,28 @@ export const NICHE_DATA: Record<NicheSlug, Niche> = {
     listBg: "#EAF7FF",
     metaTitle: "Донаты в Telegram-канале по СБП — TG Market",
     metaDescription: "Добавьте карточку доната в канал: читатели поддерживают вас в пару нажатий, оплата по СБП.",
+  },
+  offline: {
+    label: "Офлайн-магазинам и мастерам",
+    h1: "Приём оплаты в магазине, на ярмарке и на встрече — без терминала",
+    sub: "Покупатель платит по СБП со своего телефона, вы сразу видите оплату в боте. А между встречами продаёте те же товары в своём канале.",
+    pains: ["Терминал и касса стоят дорого для небольшого магазина", "Переводы на карту приходится сверять вручную", "Покупатели с ярмарки потом не знают, где купить ещё"],
+    kind: "ТОВАР",
+    cards: [
+      { t: "Свеча ручной работы", p: "1 200 ₽", img: candleW },
+      { t: "Набор из 3 свечей", p: "3 200 ₽", img: candle },
+      { t: "Картина маслом, 40×50", p: "8 000 ₽", img: artist },
+    ],
+    fin: "Принимайте оплату на месте и продавайте в канале",
+    photo: candle,
+    channel: "Свечная лавка",
+    posts: ["Сегодня мы на ярмарке в Гостином дворе, стенд 14 — приходите 🕯️", "Не успели к нам? Вся коллекция в витрине, оплата прямо здесь 👇"],
+    ava: aArt,
+    btn: "Оплатить",
+    listKind: "ОФЛАЙН",
+    listBg: "#FFF1EC",
+    metaTitle: "Приём оплаты по СБП без терминала для офлайн-магазинов — TG Market",
+    metaDescription: "Режим кассы в Telegram: покупатель платит по СБП со своего телефона, вы сразу видите оплату в боте. Витрина товаров и продажи в канале.",
   },
 };
 
