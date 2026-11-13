@@ -9,8 +9,8 @@
 .h3 { font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; font-size: 24px; }
 .lead { line-height: 1.5; color: var(--ink-2); max-width: 680px; font-size: 19px; }
 .body { font-size: 16px; line-height: 1.55; color: var(--ink-2); }
-.btn { align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; height: 60px; padding: 0 30px; border-radius: 16px; background: var(--coral); color: var(--ink); font-size: 18px; font-weight: 600; text-decoration: none; transition: background .15s; }
-.btn:hover { background: #ff9274; }
+.btn { align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; height: 60px; padding: 0 30px; border-radius: 16px; background: var(--coral); color: #fff; font-size: 18px; font-weight: 600; text-decoration: none; transition: background .15s; }
+.btn:hover { background: #ec6a4a; color: #fff; }
 .g3 { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .card, .cardGray { background: #fff; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 12px; }
 .cardGray { background: var(--soft); }
@@ -27,7 +27,7 @@
 .step { display: flex; gap: 16px; align-items: flex-start; width: 100%; padding: 20px 24px; border-radius: 20px; border: 0; color: var(--ink); cursor: pointer; background: transparent; transition: background .25s; text-align: left; }
 .stepOn { background: #fff; box-shadow: 0 14px 30px rgba(11, 18, 51, 0.08); }
 .stepNum { flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 16px; background: #fff; border: 1.5px solid #d5dae5; }
-.stepOn .stepNum { background: var(--coral); border: 0; }
+.stepOn .stepNum { background: var(--coral); color: #fff; border: 0; }
 .stepText { display: flex; flex-direction: column; gap: 6px; text-align: left; }
 .stepTitle { font-size: 19px; line-height: 1.25; font-weight: 700; }
 .stepDesc { font-size: 15px; line-height: 1.5; color: var(--ink-2); font-weight: 400; animation: hin .3s both; }

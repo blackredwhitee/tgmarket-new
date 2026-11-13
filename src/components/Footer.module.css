@@ -3,13 +3,13 @@
 .ctaH { font-size: 52px; line-height: 1.04; font-weight: 600; letter-spacing: -0.03em; }
 .ctaSub { font-size: 19px; color: #c7cce0; }
 .checks { display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 16px; color: #dfe3f0; }
-.ctaBtn { align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; height: 58px; padding: 0 30px; border-radius: 16px; background: var(--coral); color: var(--ink); font-size: 18px; font-weight: 600; text-decoration: none; margin-top: 6px; }
-.ctaBtn:hover { background: #ff9274; }
+.ctaBtn { align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; height: 58px; padding: 0 30px; border-radius: 16px; background: var(--coral); color: #fff; font-size: 18px; font-weight: 600; text-decoration: none; margin-top: 6px; }
+.ctaBtn:hover { background: #ec6a4a; color: #fff; }
 .qr { display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 14px; color: #c7cce0; }
 .foot { max-width: 1440px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; padding: 56px 80px 40px; }
 .top { display: flex; justify-content: space-between; gap: 48px; flex-wrap: wrap; }
 .brand { display: flex; flex-direction: column; gap: 14px; max-width: 300px; font-size: 15px; color: var(--ink-2); }
-.brand img { height: 26px; width: auto; }
+.brand img { height: 26px; width: auto; align-self: flex-start; }
 .botBtn { align-self: flex-start; display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 12px; border: 1.5px solid var(--ink); color: var(--ink); font-weight: 600; text-decoration: none; font-size: 15px; transition: background .15s; }
 .botBtn:hover { background: var(--soft); }
 .cols { display: grid; grid-template-columns: repeat(4, auto); gap: 64px; font-size: 15px; }

@@ -15,7 +15,7 @@ export default function SalePath() {
           {TASKS.map((x, i) => (
             <button key={x.label} type="button" role="tab" aria-selected={i === task}
               className={`${s.pathTab} ${i === task ? s.pathTabOn : ""}`} onClick={() => setTask(i)}>
-              <span className={s.pathNum}>{i + 2}</span>{x.label}
+              <span className={s.pathNum}>{i + 1}</span>{x.label}
             </button>
           ))}
         </div>

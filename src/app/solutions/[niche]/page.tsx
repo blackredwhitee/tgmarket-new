@@ -96,7 +96,7 @@ export default async function NichePage({ params }: { params: Promise<Params> })
                 ))}
               </ol>
             </div>
-            <ChannelPhone channel={n.channel} ava={n.ava} cover={first.img} title={first.t} price={first.p.includes("·") ? "500 ₽" : first.p} btn={n.btn} />
+            <ChannelPhone channel={n.channel} posts={n.posts} ava={n.ava} cover={first.img} title={first.t} price={first.p.includes("·") ? "500 ₽" : first.p} btn={n.btn} />
           </div>
         </div>
       </section>

@@ -10,15 +10,15 @@
 .drop a { padding: 12px 14px; border-radius: 10px; text-decoration: none; }
 .drop a:hover { background: var(--soft); }
 .dropAll { font-weight: 600; border-top: 1px solid var(--line-2); border-radius: 0 0 10px 10px !important; }
-.cta { padding: 12px 20px; border-radius: 12px; background: var(--coral); color: var(--ink) !important; font-weight: 600; text-decoration: none; }
-.cta:hover { background: #ff9274; }
+.cta { padding: 12px 20px; border-radius: 12px; background: var(--coral); color: #fff !important; font-weight: 600; text-decoration: none; }
+.cta:hover { background: #ec6a4a; color: #fff; }
 .burger { display: none; width: 44px; height: 44px; border: 0; background: transparent; flex-direction: column; justify-content: center; align-items: center; gap: 5px; cursor: pointer; }
 .burger span { width: 22px; height: 2px; background: var(--ink); transition: transform .2s; }
 .x1 { transform: translateY(3.5px) rotate(45deg); }
 .x2 { transform: translateY(-3.5px) rotate(-45deg); }
 .mob { position: absolute; left: 0; right: 0; top: 100%; height: calc(100dvh - 69px); overflow-y: auto; background: #fff; padding: 12px 20px 24px; display: flex; flex-direction: column; }
 .mob > a { padding: 16px 0; border-bottom: 1px solid var(--line-2); font-size: 20px; font-weight: 600; text-decoration: none; }
-.mob > a.mobCta { margin-top: 20px; border: 0; display: flex; align-items: center; justify-content: center; height: 56px; padding: 0; border-radius: 14px; background: var(--coral); font-size: 17px; }
+.mob > a.mobCta { margin-top: 20px; border: 0; display: flex; align-items: center; justify-content: center; height: 56px; padding: 0; border-radius: 14px; background: var(--coral); color: #fff; font-size: 17px; }
 .mob > a.mobSup { margin-top: 12px; border: 0; text-align: center; font-size: 15px; font-weight: 400; color: var(--ink-2); }
 @media (max-width: 1023px) {
   .links { display: none; }

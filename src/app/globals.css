@@ -76,10 +76,10 @@ button { font-family: inherit; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   height: 58px; padding: 0 30px; border-radius: 16px; border: 0; cursor: pointer;
-  background: var(--coral); color: var(--ink); font-size: 18px; font-weight: 600; text-decoration: none;
+  background: var(--coral); color: #fff; font-size: 18px; font-weight: 600; text-decoration: none;
   transition: background .15s, transform .15s;
 }
-.btn:hover { background: #ff9274; }
+.btn:hover { background: #ec6a4a; color: #fff; }
 .btn:active { transform: scale(.98); }
 .btn-ghost { background: var(--soft); }
 .btn-ghost:hover { background: #e9edf4; }

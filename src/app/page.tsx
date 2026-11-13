@@ -150,7 +150,7 @@ export default function Home() {
             <p className={s.priceSub}>Дальше — ступенчатая шкала от 10% до 5%: чем больше оборот, тем ниже процент. Подключение бесплатное.</p>
             <div className={s.plans}>
               <div className={s.plan}><span className={s.planName}>СТАРТ</span><b>0 ₽</b><span>Бесплатно навсегда. До 5 товаров, базовые уведомления о продажах.</span></div>
-              <div className={`${s.plan} ${s.planPro}`}><span className={s.planName}>ПРО</span><b>от 600 ₽ / мес</b><span>990 ₽ в месяц, 4 800 ₽ за 6 мес, 7 200 ₽ за год. Без ограничений по товарам.</span></div>
+              <div className={`${s.plan} ${s.planPro}`}><span className={s.planName}>ПРО</span><b>от 600 ₽ / мес</b><span>Без ограничений по товарам.</span></div>
             </div>
             <Link href="/pricing/" className={`${s.btnOutlineSm} ${s.ordC}`}>Посмотреть тарифы</Link>
           </div>

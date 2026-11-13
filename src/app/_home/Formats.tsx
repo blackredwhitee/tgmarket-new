@@ -26,13 +26,22 @@ export default function Formats() {
       </div>
       <div className={s.fmtGrid}>
         <div className={s.fmtInfo}>
-          <div className={s.fmtHead}>
-            <b className={s.fmtTitle}>{f.title}</b>
-            <span className={s.fmtText}>{f.text}</span>
+          {/* все варианты лежат в одной ячейке — высота = самому длинному, страница не прыгает */}
+          <div className={s.fmtStack}>
+            {FORMATS.map((x, i) => (
+              <div key={x.label} className={`${s.fmtHead} ${i === fmt ? "" : s.fmtHidden}`} aria-hidden={i !== fmt}>
+                <b className={s.fmtTitle}>{x.title}</b>
+                <span className={s.fmtText}>{x.text}</span>
+              </div>
+            ))}
           </div>
-          <div className={s.fmtWho}>
-            <span className={s.fmtWhoLabel}>КОМУ ПОДХОДИТ</span>
-            <div className={s.chips}>{f.who.map((w) => <span key={w} className={s.chip}>{w}</span>)}</div>
+          <div className={s.fmtStack}>
+            {FORMATS.map((x, i) => (
+              <div key={x.label} className={`${s.fmtWho} ${i === fmt ? "" : s.fmtHidden}`} aria-hidden={i !== fmt}>
+                <span className={s.fmtWhoLabel}>КОМУ ПОДХОДИТ</span>
+                <div className={s.chips}>{x.who.map((w) => <span key={w} className={s.chip}>{w}</span>)}</div>
+              </div>
+            ))}
           </div>
           <span className={s.fmtMore}>Ещё в боте: промокоды, импорт карточек из Excel и витрина продавца со всеми вашими товарами.</span>
         </div>
@@ -42,8 +51,11 @@ export default function Formats() {
               <img src={f.ava} alt="" />
               <div className={s.col}><b>{f.channel}</b><span>{f.subs}</span></div>
             </div>
-            <div className={s.phoneFeed}>
-              <div key={fmt} className={s.phonePost}>
+            <div key={fmt} className={s.phoneFeed}>
+              {f.posts.map((m, i) => (
+                <div key={i} className={s.phoneMsg}>{m}<span className={s.phoneMeta}>{["1,2K", "860"][i]} · {["10:14", "18:30"][i]}</span></div>
+              ))}
+              <div className={s.phonePost}>
                 <img src={f.img} alt="" />
                 <div className={s.phonePostBody}><b>{f.card}</b><span>{f.price}</span></div>
                 <div className={s.phonePostBtn}>{f.btn}</div>

@@ -31,6 +31,8 @@ export type Niche = {
   fin: string;
   photo: StaticImageData;
   channel: string;
+  /** Обычные посты канала над карточкой в телефоне. */
+  posts: string[];
   ava: StaticImageData;
   /** Текст кнопки в карточке поста. */
   btn: string;
@@ -58,6 +60,7 @@ export const NICHE_DATA: Record<NicheSlug, Niche> = {
     fin: "Откройте запись на сессии в своём канале",
     photo: psyPhoto,
     channel: "Спокойная голова",
+    posts: ["Почему тревога усиливается к вечеру — три простых приёма, которые помогают 🧠", "Открыла запись на ноябрь: осталось 6 мест. Оплата прямо в посте 👇"],
     ava: aPsy,
     btn: "Оплатить",
     listKind: "УСЛУГИ",
@@ -79,6 +82,7 @@ export const NICHE_DATA: Record<NicheSlug, Niche> = {
     fin: "Продавайте консультации в своём канале",
     photo: career,
     channel: "Карьера без паники",
+    posts: ["Частая ошибка в резюме — список обязанностей вместо результатов. Разберу на примерах 📄", "Беру 10 резюме на разбор на этой неделе 👇"],
     ava: aCareer,
     btn: "Оплатить",
     listKind: "УСЛУГИ",
@@ -100,6 +104,7 @@ export const NICHE_DATA: Record<NicheSlug, Niche> = {
     fin: "Продавайте гайды прямо из поста",
     photo: ring,
     channel: "Таблицы и бюджет",
+    posts: ["Как я веду семейный бюджет за 10 минут в неделю — показываю свою таблицу 📊", "Шаблон уже готов, забирайте 👇"],
     ava: aBlog,
     btn: "Оплатить",
     listKind: "ЦИФРОВЫЕ ТОВАРЫ",
@@ -121,6 +126,7 @@ export const NICHE_DATA: Record<NicheSlug, Niche> = {
     fin: "Продавайте билеты в своём канале",
     photo: speaker,
     channel: "Лекторий по выходным",
+    posts: ["Спасибо всем, кто пришёл в субботу! Запись лекции уже в канале 🎥", "Следующая встреча — про архитектуру модерна. Мест 120 👇"],
     ava: speaker,
     btn: "Купить билет",
     listKind: "БИЛЕТЫ",
@@ -141,6 +147,7 @@ export const NICHE_DATA: Record<NicheSlug, Niche> = {
     fin: "Принимайте поддержку в своём канале",
     photo: blog,
     channel: "Кадр за кадром",
+    posts: ["Новый ролик уже на канале: как я снимаю на старую плёнку 📷", "Если вам нравится, что я делаю, — поддержите проект 👇"],
     ava: aBlog,
     btn: "Поддержать",
     listKind: "ДОНАТЫ",

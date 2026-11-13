@@ -10,8 +10,8 @@
 .lead { line-height: 1.5; color: var(--ink-2); max-width: 680px; font-size: 19px; }
 .body { font-size: 16px; line-height: 1.55; color: var(--ink-2); }
 .mono { font-family: var(--mono); font-size: 13px; color: var(--ink-3); line-height: 1.5; }
-.btn { align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; height: 60px; padding: 0 30px; border-radius: 16px; background: var(--coral); color: var(--ink); font-size: 18px; font-weight: 600; text-decoration: none; transition: background .15s; }
-.btn:hover { background: #ff9274; }
+.btn { align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; height: 60px; padding: 0 30px; border-radius: 16px; background: var(--coral); color: #fff; font-size: 18px; font-weight: 600; text-decoration: none; transition: background .15s; }
+.btn:hover { background: #ec6a4a; color: #fff; }
 .g3 { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .split { display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start; }
 .card, .cardGray { background: #fff; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 12px; }
